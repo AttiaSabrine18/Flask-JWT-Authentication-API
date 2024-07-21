@@ -70,12 +70,12 @@ This is a RESTful API built with Flask that provides user authentication and man
 Registers a new user.
 
 ### `POST /login`
-Registers a new user.
+    logged a  user.
     201 Created: Token issued successfully.
     401 Unauthorized: Missing email or password.
     403 Forbidden: Incorrect password or user does not exist.
 .
-logged a  user.
+
 ### `POST /user`
     GET /user
     Fetches all users. Requires a valid JWT token
