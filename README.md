@@ -72,19 +72,19 @@ Registers a new user.
 ### `POST /login`
 Registers a new user.
 Responses:
-201 Created: Token issued successfully.
-401 Unauthorized: Missing email or password.
-403 Forbidden: Incorrect password or user does not exist.
-GET /user
-Fetches all users. Requires a valid JWT token.
+    201 Created: Token issued successfully.
+    401 Unauthorized: Missing email or password.
+    403 Forbidden: Incorrect password or user does not exist.
+.
 logged a  user.
 ### `POST /user`
-Headers:
+    GET /user
+    Fetches all users. Requires a valid JWT token
+    Headers:
+    x-access-token: JWT token
 
-x-access-token: JWT token
+    Responses:
 
-Responses:
-
-200 OK: List of users.
-401 Unauthorized: Token is missing or invalid.
+    200 OK: List of users.
+    401 Unauthorized: Token is missing or invalid.
 
