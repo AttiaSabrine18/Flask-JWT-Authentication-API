@@ -71,7 +71,6 @@ Registers a new user.
 
 ### `POST /login`
 Registers a new user.
-Responses:
     201 Created: Token issued successfully.
     401 Unauthorized: Missing email or password.
     403 Forbidden: Incorrect password or user does not exist.
